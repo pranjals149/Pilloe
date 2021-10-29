@@ -1,5 +1,13 @@
+.dashboard {
+  display: flex;
+}
+
 .dashboard__upper, .dashboard__lower {
     display: flex;
+}
+
+.dashboard__lower {
+  justify-content: center;
 }
 
 .dashboard__card {
