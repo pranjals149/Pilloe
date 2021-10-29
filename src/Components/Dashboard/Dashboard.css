@@ -8,6 +8,7 @@
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
+  cursor: pointer;
 }
 
 .dashboard__card:hover {

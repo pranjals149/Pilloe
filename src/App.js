@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import HomePage from './Components/HomePage/HomePage';
 import Options from './Components/Options/Options';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Calender from './Components/Calender/Calender';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
 
           <Route exact path="/dashboard">
             <Dashboard />
+          </Route>
+
+          <Route exact path="/calender">
+            <Calender />
           </Route>
 
         </Switch>

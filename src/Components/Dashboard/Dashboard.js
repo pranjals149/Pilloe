@@ -1,8 +1,12 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 
 import "./Dashboard.css";
 
 function Dashboard() {
+
+    const history = useHistory()
+
     return (
         <div className="dashboard">
 
@@ -51,7 +55,7 @@ function Dashboard() {
                     </div>
                 </div>
 
-                <div class="dashboard__card">
+                <div class="dashboard__card" onClick={() => history.push("/calender")}>
                     <img src="https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png" alt="Avatar" style={{ width: "100%" }} />
                     <div class="dashboard__container">
                         <p><b>CALENDER</b></p>
