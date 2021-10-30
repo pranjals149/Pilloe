@@ -12,8 +12,36 @@ import Chat from './Components/Chat/Chat';
 import Whiteboard from './Components/Whiteboard/Whiteboard';
 import Tasks from './Components/Tasks/Tasks';
 import Files from './Components/Files/Files';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectUserName, setUserLoginDetails } from './features/user/userSlice';
+import { useEffect } from 'react';
+import { auth } from './firebase';
 
 function App() {
+
+  const username = useSelector(selectUserName)
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        setUser(user)
+        // history.push('/home')
+      }
+    })
+  }, [username])
+
+  const setUser = (user) => {
+    dispatch(
+      setUserLoginDetails({
+        name: user.displayName,
+        email: user.email,
+        photo: user.photoURL
+      })
+    )
+  }
+
   return (
     <div className="App">
       <Router>
