@@ -5,6 +5,10 @@ import HomePage from './Components/HomePage/HomePage';
 import Options from './Components/Options/Options';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Calender from './Components/Calender/Calender';
+import Announcements from './Components/Announcements/Announcements';
+
+import 'react-toastify/dist/ReactToastify.css'
+import Chat from './Components/Chat/Chat';
 
 function App() {
   return (
@@ -27,6 +31,14 @@ function App() {
 
           <Route exact path="/calender">
             <Calender />
+          </Route>
+
+          <Route exact path="/announcements">
+            <Announcements />
+          </Route>
+
+          <Route exact path="/chat">
+            <Chat />
           </Route>
 
         </Switch>

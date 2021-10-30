@@ -1,0 +1,17 @@
+.announcements {
+    display: flex;
+}
+
+.announcements__container {
+    width: 100%;
+}
+
+.announce__time {
+    margin-top: 20px;
+    color: gray;
+    font-size: 8px;
+}
+
+.announce__lower {
+    margin-top: 20px;
+}

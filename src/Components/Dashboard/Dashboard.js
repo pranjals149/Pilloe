@@ -22,7 +22,7 @@ function Dashboard() {
                         </div>
                     </div>
 
-                    <div class="dashboard__card">
+                    <div class="dashboard__card" onClick={() => history.push("/announcements")}>
                         <img src="https://cdn.pixabay.com/photo/2017/12/23/23/28/businessman-3036181_960_720.jpg" alt="Avatar" style={{ width: "100%" }} />
                         <div class="dashboard__container">
                             <p><b>ANNOUNCEMENTS</b></p>
@@ -45,7 +45,7 @@ function Dashboard() {
                 </div>
 
                 <div className="dashboard__lower">
-                    <div class="dashboard__card">
+                    <div class="dashboard__card" onClick={() => history.push("/chat")}>
                         <img src="https://cdn.pixabay.com/photo/2021/10/10/18/59/online-6698352_960_720.png" alt="Avatar" style={{ width: "100%" }} />
                         <div class="dashboard__container">
                             <p><b>COMMUNITY CHAT</b></p>

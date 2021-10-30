@@ -1,7 +1,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .sidebar__image {
