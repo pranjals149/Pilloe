@@ -1,0 +1,20 @@
+.files {
+    display: flex;
+}
+
+.files__container, .files__main {
+    width: 100%;
+}
+
+.files__uploadFile {
+    text-align: center;
+    background: #1565C0;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.files__uploadButton {
+    text-align: center;
+    margin-top: 20px;
+}

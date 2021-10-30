@@ -83,7 +83,7 @@ function Announcements() {
             <div className="announcements__container">
                 <ThemeProvider theme={theme}>
 
-                    <main>
+                    <div>
                         {/* Hero unit */}
                         <Box
                             sx={{
@@ -200,7 +200,7 @@ function Announcements() {
                                 ))}
                             </Grid>
                         </Container>
-                    </main>
+                    </div>
                 </ThemeProvider>
             </div>
 
