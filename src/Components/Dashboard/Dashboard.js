@@ -53,10 +53,15 @@ function Dashboard() {
                     </div>
 
                     <div class="dashboard__card">
-                        <img src="https://cdn.pixabay.com/photo/2017/09/28/22/14/speech-icon-2797263_960_720.png" alt="Avatar" style={{ width: "100%" }} />
-                        <div class="dashboard__container">
-                            <p><b>GOOGLE MEET</b></p>
-                        </div>
+                        <a href="https://meet.google.com/new" target="_blank" rel="noreferrer" style={{
+                            color: "white",
+                            textDecoration: "none"
+                        }}>
+                            <img src="https://cdn.pixabay.com/photo/2017/09/28/22/14/speech-icon-2797263_960_720.png" alt="Avatar" style={{ width: "100%" }} />
+                            <div class="dashboard__container">
+                                <p><b>GOOGLE MEET</b></p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="dashboard__card" onClick={() => history.push("/calender")}>
