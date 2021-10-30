@@ -1,0 +1,55 @@
+.tasks {
+    display: flex;
+}
+
+.tasks__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+  margin: 2rem 0;
+  font-weight: 400;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section {
+  display: flex;
+  width: 70rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  border: 1px solid #edc988;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  background-color: #9ad3bc;
+  border-color: #9ad3bc;
+  color: #132743;
+  font-weight: 500;
+  font-family: "Kanit", sans-serif;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  margin-right: 0.25rem;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+    color: #eeecda;
+}

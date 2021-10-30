@@ -10,6 +10,7 @@ import Announcements from './Components/Announcements/Announcements';
 import 'react-toastify/dist/ReactToastify.css'
 import Chat from './Components/Chat/Chat';
 import Whiteboard from './Components/Whiteboard/Whiteboard';
+import Tasks from './Components/Tasks/Tasks';
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
 
           <Route exact path="/whiteboard">
             <Whiteboard />
+          </Route>
+
+          <Route exact path="/tasks">
+            <Tasks />
           </Route>
 
         </Switch>

@@ -12,9 +12,9 @@ function Sidebar() {
 
             <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2017/12/23/23/28/businessman-3036181_960_720.jpg" alt="" title="Announcements" onClick={() => history.push("/announcements")} />
 
-            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2016/01/03/00/43/upload-1118929_960_720.png" alt="" title="Upload Files" onClick={() => history.push("/")} />
+            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2016/01/03/00/43/upload-1118929_960_720.png" alt="" title="Upload Files" onClick={() => history.push("/files")} />
 
-            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2016/03/31/18/39/icons-1294536_960_720.png" alt="" title="Task Management" onClick={() => history.push("/")} />
+            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2016/03/31/18/39/icons-1294536_960_720.png" alt="" title="Task Management" onClick={() => history.push("/tasks")} />
 
             <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2021/10/10/18/59/online-6698352_960_720.png" alt="" title="Community Chat" onClick={() => history.push("/chat")} />
 

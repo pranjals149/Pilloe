@@ -29,14 +29,14 @@ function Dashboard() {
                         </div>
                     </div>
 
-                    <div class="dashboard__card">
+                    <div class="dashboard__card" onClick={() => history.push("/files")}>
                         <img src="https://cdn.pixabay.com/photo/2016/01/03/00/43/upload-1118929_960_720.png" alt="Avatar" style={{ width: "100%" }} />
                         <div class="dashboard__container">
                             <p><b>UPLOAD FILES</b></p>
                         </div>
                     </div>
 
-                    <div class="dashboard__card">
+                    <div class="dashboard__card" onClick={() => history.push("/tasks")}>
                         <img src="https://cdn.pixabay.com/photo/2016/03/31/18/39/icons-1294536_960_720.png" alt="Avatar" style={{ width: "100%" }} />
                         <div class="dashboard__container">
                             <p><b>TASK MANAGEMENT</b></p>

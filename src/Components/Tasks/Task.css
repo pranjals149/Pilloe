@@ -1,0 +1,105 @@
+.task {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0.25rem;
+  justify-content: center;
+  background-color: #002244;
+  border-radius: 20px;
+}
+
+  .task form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 0.25rem;
+  }
+
+    .task .input {
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      color: #eeecda;
+      text-align: center;
+      resize: none;
+      display: flex;
+      font-family: "Kanit", sans-serif;
+    }
+
+      .task .input:hover {
+        cursor: pointer;
+        border: 1px solid #eeecda;
+      }
+
+      .task .input:focus {
+        outline: none;
+        border-color: #edc988;
+        color: #edc988;
+      }
+
+      .task .input::placeholder {
+        color: #eeecda;
+      }
+    
+
+    .title {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem 0;
+      width: 100%;
+      font-size: 1.1rem;
+
+    }
+
+    .title:hover {
+        cursor: text;
+    }
+
+    .description {
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      width: 100%;
+      font-size: 1.1rem;
+    }
+
+      .description:hover {
+        cursor: text;
+      }
+    
+
+    .urgencyLabels {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+     .urgencyLabels label {
+        color: white;
+        padding: 0.05rem 0.5rem;
+        margin: 0 0.25rem;
+        text-transform: uppercase;
+        border-radius: 0.25rem;
+     }
+
+        .urgencyLabels label .icon {
+          font-size: 1.25rem;
+          margin-right: 0.25rem;
+          transition: all 0.4s ease-in-out;
+        }
+
+        .urgencyLabels label input {
+          display: none;
+        }
+
+        .button {
+            margin-bottom: 20px;
+            background-color: rgba(0,0,0,0.3);
+            color: white;
+            border: none;
+        }
+
+        .addTask {
+            display: flex;
+            margin: auto;
+        }
