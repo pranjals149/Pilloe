@@ -49,7 +49,7 @@ export default function Files() {
             .catch(err => {
                 toast.error(err.message);
             })
-    }, [])
+    }, [file])
 
     return (
         <div className="files">

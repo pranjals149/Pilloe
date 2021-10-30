@@ -12,6 +12,7 @@ import Chat from './Components/Chat/Chat';
 import Whiteboard from './Components/Whiteboard/Whiteboard';
 import Tasks from './Components/Tasks/Tasks';
 import Files from './Components/Files/Files';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
