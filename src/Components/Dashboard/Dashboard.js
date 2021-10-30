@@ -15,7 +15,7 @@ function Dashboard() {
 
             <div className="dashboard__contain">
                 <div className="dashboard__upper">
-                    <div class="dashboard__card">
+                    <div class="dashboard__card" onClick={() => history.push("/whiteboard")}>
                         <img src="https://cdn.pixabay.com/photo/2020/02/24/16/06/whiteboard-4876651_960_720.jpg" alt="Avatar" style={{ width: "100%" }} />
                         <div class="dashboard__container">
                             <p><b>WHITEBOARD</b></p>
