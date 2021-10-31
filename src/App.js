@@ -16,6 +16,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectUserName, setUserLoginDetails } from './features/user/userSlice';
 import { useEffect } from 'react';
 import { auth } from './firebase';
+import Create from './Components/Create/Create';
 
 function App() {
 
@@ -56,7 +57,11 @@ function App() {
             <Options />
           </Route>
 
-          <Route exact path="/dashboard">
+          <Route exact path="/create">
+            <Create />
+          </Route>
+
+          <Route exact path="/dashboard/:id">
             <Dashboard />
           </Route>
 

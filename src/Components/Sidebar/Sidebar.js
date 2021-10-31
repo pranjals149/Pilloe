@@ -1,10 +1,26 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { selectUserPhoto } from '../../features/user/userSlice'
+import { auth } from '../../firebase'
 
 import "./Sidebar.css"
 
 function Sidebar() {
     const history = useHistory()
+
+    const logout = () => {
+        auth.signOut()
+            .then(() => {
+                history.push('/')
+            })
+            .catch((err) => toast.error(err.message))
+    }
+
+    const image = useSelector(selectUserPhoto)
+
+    const name = localStorage.getItem("Name")
 
     return (
         <div className="sidebar">
@@ -25,7 +41,9 @@ function Sidebar() {
 
             <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png" alt="" title="View Calendar" onClick={() => history.push("/calender")} />
 
-            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="" title="Dashboard" onClick={() => history.push("/dashboard")} />
+            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="" title="Dashboard" onClick={() => history.push(`/dashboard/${name}`)} />
+
+            <img className="sidebar__image" src={image} alt="" title="Logout" onClick={logout} />
 
         </div>
     )
