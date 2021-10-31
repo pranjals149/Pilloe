@@ -14,7 +14,7 @@ Members of a team working remotely mostly face these issues -
 
 <p align="center"><img src="./p.png" /></p>
 
-Pilloe is remote collaboration application which allows users to create a session or to join a session. After entering in the session, a user can use a whiteboard, make announcements, upload files, manage tasks, chat with community, make a meet, and view calendar
+Pilloe is remote collaboration application which allows users to create a session or to join a session. After entering in the session, a user can use a whiteboard, make announcements, upload files, manage tasks, chat with community, make a meet, and view calendar.
 
 ### Tech Stack
 1. Reactjs
