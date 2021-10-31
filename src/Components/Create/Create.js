@@ -50,7 +50,7 @@ const Create = () => {
         setId("")
         setName("")
         setPass("")
-        toast.success("Session create successfully");
+        toast.success("Session created successfully");
 
         history.push(`/dashboard/${name}`);
     }
