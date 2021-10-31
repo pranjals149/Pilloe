@@ -17,6 +17,7 @@ import { selectUserName, setUserLoginDetails } from './features/user/userSlice';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import Create from './Components/Create/Create';
+import Join from './Components/Join/Join';
 
 function App() {
 
@@ -59,6 +60,10 @@ function App() {
 
           <Route exact path="/create">
             <Create />
+          </Route>
+
+          <Route exact path="/join">
+            <Join />
           </Route>
 
           <Route exact path="/dashboard/:id">

@@ -14,6 +14,7 @@ function Sidebar() {
         auth.signOut()
             .then(() => {
                 history.push('/')
+                toast.success("Successully Logged Out")
             })
             .catch((err) => toast.error(err.message))
     }
@@ -42,6 +43,8 @@ function Sidebar() {
             <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png" alt="" title="View Calendar" onClick={() => history.push("/calender")} />
 
             <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="" title="Dashboard" onClick={() => history.push(`/dashboard/${name}`)} />
+
+            <img className="sidebar__image" src="https://cdn.pixabay.com/photo/2021/10/25/14/44/confused-6741161_960_720.png" alt="" title="Options" onClick={() => history.push("/options")} />
 
             <img className="sidebar__image" src={image} alt="" title="Logout" onClick={logout} />
 
