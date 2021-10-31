@@ -85,7 +85,7 @@ export default function Files() {
                                     Upload a File
                                 </Button>
 
-                                <Button color="primary" variant="contained" onClick={() => history.push("/dashboard")}>Go Back to Dashboard</Button>
+                                <Button color="primary" variant="contained" onClick={() => history.push(`/dashboard/${localStorage.getItem("Name")}`)}>Go Back to Dashboard</Button>
                             </Stack>
 
                             {show === true && (

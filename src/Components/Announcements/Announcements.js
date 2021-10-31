@@ -109,7 +109,7 @@ function Announcements() {
                                     justifyContent="center"
                                 >
                                     <Button variant="contained" onClick={handleClickOpen}>Make an Announcement</Button>
-                                    <Button variant="contained" onClick={() => history.push("/dashboard")}>Go Back to Dashboard</Button>
+                                    <Button variant="contained" onClick={() => history.push(`/dashboard/${localStorage.getItem("Name")}`)}>Go Back to Dashboard</Button>
                                 </Stack>
                             </Container>
 

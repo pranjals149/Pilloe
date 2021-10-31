@@ -19,7 +19,7 @@ function Calender() {
                 textAlign: "center",
                 marginTop: "40px"
             }}>
-                <Button variant="contained" color="primary" onClick={() => history.push("/dashboard")}>Go back to Dashboard</Button>
+                <Button variant="contained" color="primary" onClick={() => history.push(`/dashboard/${localStorage.getItem("Name")}`)}>Go back to Dashboard</Button>
             </div>
         </div>
     )
